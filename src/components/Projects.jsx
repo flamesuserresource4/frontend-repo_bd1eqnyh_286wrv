@@ -9,26 +9,26 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="bg-black text-white py-24">
+    <section id="projects" className="bg-white text-slate-900 py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold">Featured Projects</h2>
-            <p className="mt-3 text-white/70">A snapshot of our recent work across sectors.</p>
+            <p className="mt-3 text-slate-600">A snapshot of our recent work across sectors.</p>
           </div>
-          <a href="#contact" className="hidden sm:inline-block text-sm border border-white/20 px-4 py-2 rounded-md hover:bg-white/10">Start Your Project</a>
+          <a href="#contact" className="hidden sm:inline-block text-sm border border-slate-300 px-4 py-2 rounded-md hover:bg-slate-50">Start Your Project</a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((p) => (
-            <div key={p.title} className="group relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02]">
+            <div key={p.title} className="group relative overflow-hidden rounded-xl border border-slate-200 bg-gradient-to-b from-white to-slate-50">
               <img src={p.img} alt={p.title} className="h-64 w-full object-cover group-hover:scale-105 transition duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent" />
               <div className="absolute bottom-0 p-4">
-                <span className="inline-block text-xs uppercase tracking-wide text-white/70">{p.tag}</span>
+                <span className="inline-block text-xs uppercase tracking-wide text-slate-700">{p.tag}</span>
                 <h3 className="text-xl font-semibold">{p.title}</h3>
               </div>
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-[radial-gradient(circle_at_30%_20%,rgba(250,204,21,0.15),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(34,197,94,0.12),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(59,130,246,0.12),transparent_40%)]" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-[radial-gradient(circle_at_30%_20%,rgba(245,158,11,0.15),transparent_40%),radial-gradient(circle_at_80%_0%,rgba(34,197,94,0.12),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(59,130,246,0.12),transparent_40%)]" />
             </div>
           ))}
         </div>
